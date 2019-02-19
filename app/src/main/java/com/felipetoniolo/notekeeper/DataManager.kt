@@ -1,15 +1,16 @@
 package com.felipetoniolo.notekeeper
 
-class DataManager {
+object DataManager {
     val courses = HashMap<String, CourseInfo>()
     val notes = ArrayList<NoteInfo>()
 
     init {
         initializeCourse()
+        initializeNotes()
     }
 
     private fun initializeCourse(){
-        var course = CourseInfo("android,intents", "Android Programming with Intents")
+        var course = CourseInfo("android_intents", "Android Programming with Intents")
         courses.set(course.courseID, course)
 
         course = CourseInfo("android_async", "Android Async Programming and Services")
@@ -20,6 +21,10 @@ class DataManager {
 
         course = CourseInfo("java_core", "Java Fundamentals: The Core Platform")
         courses.set(course.courseID, course)
+    }
+
+    private fun initializeNotes() {
+
     }
 
 }
