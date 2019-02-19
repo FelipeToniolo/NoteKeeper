@@ -1,6 +1,6 @@
 package com.felipetoniolo.notekeeper
 
-class CourseInfo(val courseID: String, val title: String) {
+data class CourseInfo(val courseID: String, val title: String) {
     override fun toString(): String {
         return title
     }

@@ -24,6 +24,16 @@ object DataManager {
     }
 
     private fun initializeNotes() {
+        notes.add(NoteInfo(courses.get("android_intents")!!, "My Android Intents Note", "This is an android note."))
+        notes.add(NoteInfo(courses.get("java_lang")!!, "My Java Note", "This is a note."))
+        notes.add(NoteInfo(courses.get("java_core")!!, "Compiler options", "The java option isn't compatible with the cp option"))
+        notes.add(NoteInfo(courses.get("android_async")!!, "Service default threads", "Did you know that by default an Android Service will tie up the UI thread?"))
+        notes.add(NoteInfo(courses.get("java_lang")!!, "My Java Note", "This is a note."))
+        notes.add(NoteInfo(courses.get("android_intents")!!, "My Android Intents Note", "This is an android note."))
+        notes.add(NoteInfo(courses.get("java_lang")!!, "My Java Note", "This is a note."))
+        notes.add(NoteInfo(courses.get("java_core")!!, "Compiler options", "The java option isn't compatible with the cp option"))
+        notes.add(NoteInfo(courses.get("android_async")!!, "Service default threads", "Did you know that by default an Android Service will tie up the UI thread?"))
+        notes.add(NoteInfo(courses.get("java_lang")!!, "My Java Note", "This is a note."))
 
     }
 
